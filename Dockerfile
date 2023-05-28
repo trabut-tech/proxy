@@ -10,7 +10,7 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 go build -ldflags "-s -w" -o /usr/bin/app ./cmd/
+RUN CGO_ENABLED=0 go build -ldflags "-s -w" -o /usr/bin/app .
 
 WORKDIR /app/
 
