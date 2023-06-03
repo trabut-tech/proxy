@@ -16,4 +16,4 @@ WORKDIR /app/
 
 ENV LISTEN_ADDR=":33080"
 
-CMD app --listen=$LISTEN_ADDR --verbose
+CMD app --listen=$LISTEN_ADDR --auth-user=$AUTH_USER --auth-password=$AUTH_PASSWORD
